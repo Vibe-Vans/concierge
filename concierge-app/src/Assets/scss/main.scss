@@ -1,0 +1,35 @@
+@import 'variables';
+
+.shape{
+    height: 200px;
+    padding: 25px;
+    width: 100%;
+    border-bottom-left-radius: 55px;
+  
+}
+.tile_1st{
+    position: absolute;
+    top: 0;
+    background:$headerColor;
+    z-index: 5;
+}
+
+.tile_2nd{
+    position: absolute;
+    top: 130px;
+    background:$bradingColor-3;
+    z-index: 4;
+    
+}
+.tile_3rd{
+    position: absolute;
+    top: 230px;
+    background:$bradingColor-2;
+    z-index: 3;
+}
+.tile_4th{
+    position: absolute;
+    top: 310px;
+    background:$bradingColor-1;
+    z-index: 2;
+}

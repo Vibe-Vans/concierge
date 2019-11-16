@@ -1,0 +1,16 @@
+@import './Assets/scss/variables';
+html, body{
+  height: 100%;
+  width: 100;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $backgroundColor;
+}
+.logo{
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  bottom: 10px;
+  height: 40px;
+}
