@@ -1,35 +1,121 @@
-@import 'variables';
-
-.shape{
-    height: 200px;
-    padding: 25px;
+@import "variables";
+/*SECTIONS*/
+section {
     width: 100%;
-    border-bottom-left-radius: 55px;
-  
 }
-.tile_1st{
+.sec_menu {
+    position: relative;
+    // height: 30%;
+}
+.sec_btn {
+    padding: 15px;
+    margin-top: 600px;
+    text-align: center;
+}
+.sec_logo {
+    padding: 0;
     position: absolute;
-    top: 0;
-    background:$headerColor;
-    z-index: 5;
+    .logo {
+        width: 100%;
+        display: flex;
+        margin-top: 270px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+/* BRANDING - in CANVAS */
+
+.shape {
+    width: 100%;
+    height: 200px;
+    padding: 35px;
+    width: 100%;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 55px;
 }
 
-.tile_2nd{
+.tile_1st {
+    // top: 0;
+    display: flex;
+    flex-direction: column;
+    color: $secondaryText;
     position: absolute;
-    top: 130px;
-    background:$bradingColor-3;
-    z-index: 4;
-    
+    // z-index: 5;
+    background: $headerColor;
 }
-.tile_3rd{
+
+.tile_2nd {
     position: absolute;
-    top: 230px;
-    background:$bradingColor-2;
-    z-index: 3;
+    color: $primaryText;
+    // top: 130px;
+    background: $bradingColor-3;
 }
-.tile_4th{
+
+.tile_3rd {
     position: absolute;
-    top: 310px;
-    background:$bradingColor-1;
-    z-index: 2;
+    color: $primaryText;
+    // top: 220px;
+    background: $bradingColor-2;
+    // z-index: 3;
+}
+
+.tile_4th {
+    position: absolute;
+    color: $primaryText;
+    // top: 300px;
+    background: $bradingColor-1;
+    // z-index: 2;
+}
+
+.subtile {
+    height: 200px;
+    width: 100px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    box-shadow: none;
+    background: #6e0f0152;
+}
+
+/* Text */
+
+.data_place {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn.btn-primary {
+    background-color: #ffffff01;
+    color: $secondaryText;
+    text-transform: uppercase;
+    border-color: $bradingColor-3;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: $primaryText;
+    }
+}
+.btn:focus,
+.btn:active {
+    box-shadow: none;
+    outline: none;
+}
+
+/* MODAL VIEW */
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    background-color: rgba(2, 2, 2, 0.2);
 }

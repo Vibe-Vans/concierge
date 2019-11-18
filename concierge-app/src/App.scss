@@ -4,13 +4,15 @@ html, body{
   width: 100;
   margin: 0;
   padding: 0;
+  font-family: $fontName;
+  line-height: $lineHieght;
   overflow: hidden;
   background-color: $backgroundColor;
 }
-.logo{
-  display: flex;
-  justify-content:center;
-  align-content: center;
-  bottom: 10px;
-  height: 40px;
+
+.react-icons {
+  vertical-align: middle;
+}
+.container-fluid{
+  padding: 0;
 }

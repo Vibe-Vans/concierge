@@ -1,10 +1,20 @@
 import React from 'react'
+import Texty from 'rc-texty'
 
-const Vibe = () => {
+const Vibe = (props) => {
 
     return(
         <div className='shape tile_4th'>
-        Vibe: Jupiter clouds
+            <div className="data_place">
+
+                <Texty
+                    type='scaleY'
+                    mode='smooth'
+                    style={{ fontSize: '1.2rem', marginBottom: '15px' }}>
+                        {'vibe: '  +  props.vibe.vibe.vibeName}
+                </Texty>
+            </div>
+       
     </div>
 
     )

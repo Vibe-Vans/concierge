@@ -1,0 +1,26 @@
+{
+    "data": {
+        "user": {
+            "name": "Verner",
+            "message": "your Vibe Van is on its way."
+        },
+        "pickup": {
+            "address1": "LAX Terminal #5",
+            "city": "Los Agenels",
+            "state": "CA",
+            "latitude":"33.9416",
+            "longitude":"118.4085"
+        },
+        "driver": {
+            "driverName": "shawn"
+        },
+        "vibe": {
+            "vibeName": "jupiter clouds"
+        },
+        "action":{
+            "title":"In-VAN MEETING"
+
+        }
+     
+    }
+}
