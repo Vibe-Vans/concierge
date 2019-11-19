@@ -54,10 +54,10 @@ class Vibe extends Component {
                         </Modal.Header>
 
                         <Modal.Body>
-                            <div className='row'>
+                            <div>
                                 {
                                     this.state.vibeName.map((vibename, id) => (
-                                        <div key={id} className='col-12 vibe'>
+                                        <div key={id} className='vibe'>
                                             <input
                                                 type="radio"
                                                 name="viebeRadio"

@@ -15,7 +15,6 @@ const PickUp = (props) => {
         <div className='shape tile_2nd'>
             <div className="data_place">
                 <Texty
-                    duration='2000'
                     type='scaleBig'
                     mode='smooth'
                     style={{ fontSize: '1.8rem', marginBottom: '15px' }}>
@@ -23,7 +22,6 @@ const PickUp = (props) => {
                 </Texty>
 
                 <Texty
-                    duration='4000'
                     type='left'
                     mode='smooth'
                     style={{ fontSize: '1.5rem', marginBottom: '15px' }}>

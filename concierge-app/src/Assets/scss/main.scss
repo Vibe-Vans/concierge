@@ -125,7 +125,8 @@ section {
 }
 
 .modal-content {
-    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
 }
 .modal-title{
     color:#fff;
@@ -145,8 +146,8 @@ section {
     padding: 10px 30px;
     height: 80px;
     margin:5px;
-    border-bottom-left-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.9);
+    // border-bottom-left-radius: 30px;
+    background-color: rgba(56, 56, 56, 0.377);
 
     input[type=radio]{
         &:checked :before{
