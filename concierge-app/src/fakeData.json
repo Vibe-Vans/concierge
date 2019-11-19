@@ -6,10 +6,10 @@
         },
         "pickup": {
             "address1": "LAX Terminal #5",
-            "city": "Los Agenels",
+            "city": "Los Ageneles",
             "state": "CA",
             "latitude":"33.9416",
-            "longitude":"118.4085"
+            "longitude":"-118.4085"
         },
         "driver": {
             "driverName": "shawn"

@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react'
 import Texty from 'rc-texty'
-import { FaArrowRight } from 'react-icons/fa';
+import { FaWifi } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/modal';
 
@@ -45,7 +45,7 @@ class Vibe extends Component {
 
                 <div className='shape subtile'>
                     <Button variant="outline-none" onClick={this.handleShow}>
-                        <FaArrowRight style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
+                        <FaWifi style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
                     </Button>
 
                     <Modal show={this.state.show} onHide={this.handleClose}>

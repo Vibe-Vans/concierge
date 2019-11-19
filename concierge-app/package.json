@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deck.gl": "^7.3.6",
     "node-sass": "^4.13.0",
     "rc-tween-one": "^2.6.5",
     "react": "^16.12.0",
