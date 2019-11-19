@@ -65,7 +65,13 @@ class Vibe extends Component {
                                                 checked={this.state.selectedVibe === this.state.vibeName[vibename.id].vibeName}
                                                 value={vibename.vibeName}
                                                 onChange={this.handleChange} />
-                                            <label>{vibename.vibeName}</label>
+                                            <label>
+                                                <Texty
+                                                    type='mask-bottom'
+                                                    mode='smooth'
+                                                    >{vibename.vibeName}
+                                                </Texty>
+                                                </label>
                                         </div>
                                     ))
                                 }
