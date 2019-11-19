@@ -9,7 +9,7 @@ section {
 }
 .sec_btn {
     padding: 15px;
-    margin-top: 600px;
+    margin-top: 540px;
     text-align: center;
 }
 .sec_logo {
@@ -80,7 +80,14 @@ section {
     position: absolute;
     text-align: center;
     box-shadow: none;
-    background: #6e0f0152;
+    background: #00000062;
+    transition: all 1s ease-in-out;
+    &:hover{
+        width: 140px;
+        background: #00000022;
+
+    }
+  
 }
 
 /* Text */
@@ -114,8 +121,45 @@ section {
 
 .modal-body {
     padding: 0;
+    color: #fff;
 }
 
 .modal-content {
-    background-color: rgba(2, 2, 2, 0.2);
+    background-color: rgba(0, 0, 0, 0);
+}
+.modal-title{
+    color:#fff;
+}
+.close{
+    font-size: 2rem;
+    color:$secondaryText;
+    &:hover{
+        color:$primaryText;
+    }
+}
+/*Radio Button on Vibe Popuo */
+
+.vibe{
+    display:flex;
+    align-items: center;
+    padding: 10px 30px;
+    height: 80px;
+    margin:5px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    input[type=radio]{
+        &:checked :before{
+            color: $secondaryText!important;
+            width: 130px;
+            height: 30px;
+     }
+   
+    }
+    label{
+        font-size: 1.5rem;
+        color: $secondaryText;
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
 }

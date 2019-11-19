@@ -82,10 +82,8 @@ class App extends Component {
         </section>
 
         <section className="sec_btn">
-       
           <button className='btn btn-primary  btn-lg'>{data.action.title}</button>
-
-     
+ 
         </section>
         <section className="sec_logo">
         <div >

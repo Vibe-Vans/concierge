@@ -14,9 +14,18 @@
         "driver": {
             "driverName": "shawn"
         },
-        "vibe": {
-            "vibeName": "jupiter clouds"
-        },
+        "vibe":[
+            {   "id":0,
+                "vibeName": "jupiter clouds"
+            },
+            {   "id":1,
+                "vibeName": "mercury wifi"
+            },
+            {   "id":2,
+                "vibeName": "planet 3D"
+            }
+
+        ],
         "action":{
             "title":"In-VAN MEETING"
 

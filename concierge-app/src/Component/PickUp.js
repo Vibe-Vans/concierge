@@ -3,8 +3,6 @@ import Texty from 'rc-texty';
 import Map from './Map';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/modal';
-
-import map_icon from '../Assets/icon/map.png'
 import { FaMapMarked } from 'react-icons/fa';
 
 const PickUp = (props) => {
@@ -12,8 +10,6 @@ const PickUp = (props) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-
 
     return (
         <div className='shape tile_2nd'>
@@ -36,7 +32,9 @@ const PickUp = (props) => {
 
             </div>
             <div className='shape subtile'>
-                <Button  variant="outline-warning" onClick={handleShow}> <FaMapMarked style={{ marginTop: '65px', fontSize: '2.5rem', textAlign: 'center' }} /></Button>
+                <Button  variant="outline-none" onClick={handleShow}>
+                    <FaMapMarked style={{ marginTop: '65px', fontSize: '2.2rem', textAlign: 'center' }} />
+                </Button>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>

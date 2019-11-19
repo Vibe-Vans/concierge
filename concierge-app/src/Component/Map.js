@@ -10,8 +10,8 @@ class Map extends Component {
         super(props)
         this.state= {
             viewport:{
-                latitude: 33.9416,
-                longitude: 118.4085,
+                latitude: 33.942791,
+                longitude: -118.410042,
                 height: 500,
                 width: 800,
                 zoom: 10
@@ -28,8 +28,8 @@ class Map extends Component {
     
                     <ReactMapboxGl
                         {...this.state.viewport}
-                        latitude={33.9416}
-                        longitude={118.4085}
+                        latitude={33.942791}
+                        longitude={-118.410042}
                         zoom={10}
                         width={500}
                         height={800}
@@ -40,7 +40,7 @@ class Map extends Component {
                         mapboxApiAccessToken={MAPBOX_TOKEN}
                         onViewportChange={(viewport) => this.setState({ viewport })}
                     >
-                        <Marker  latitude={33.9416} longitude={118.4085} offsetLeft={-20} offsetTop={-10}>
+                        <Marker  latitude={33.942791} longitude={-118.410042} offsetLeft={-20} offsetTop={-10}>
                             <FaMapPin src={FaMapPin} alt='You are here' fontSize="2em" />
                         </Marker>
                     </ReactMapboxGl>
