@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
 
+import './fonts/bf8628d2-1ae0-4645-ba3f-3ce62d8d907c.ttf';
+
 
 import User from './Component/User'
 import PickUp from './Component/PickUp';

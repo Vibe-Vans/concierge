@@ -1,4 +1,12 @@
 @import './Assets/scss/variables';
+/*FONTS*/
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/bf8628d2-1ae0-4645-ba3f-3ce62d8d907c.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body{
   height: 100%;
   width: 100;
@@ -8,6 +16,7 @@ html, body{
   line-height: $lineHieght;
   overflow: hidden;
   background-color: $backgroundColor;
+  font-family: 'Futura', Helvetica, Arial, sans-serif;
 }
 
 .react-icons {
