@@ -1,18 +1,18 @@
 {
     "data": {
         "user": {
-            "name": "Verner",
-            "message": "your Vibe Van is on its way."
+            "name":         "Verner",
+            "message":      "your Vibe Van is on its way."
         },
         "pickup": {
-            "address1": "LAX Terminal #5",
-            "city": "Los Agneles",
-            "state": "CA",
-            "latitude":"34.05223",
-            "longitude":"-118.24368"
+            "address1":     "LAX Terminal #5",
+            "city":         "Los Angeles",
+            "state":        "CA",
+            "latitude":     "34.05223",
+            "longitude":    "-118.24368"
         },
         "driver": {
-            "driverName": "shawn"
+            "driverName":   "shawn"
         },
         "vibe":[
             {   "id":0,
@@ -27,7 +27,7 @@
 
         ],
         "action":{
-            "title":"In-VAN MEETING"
+            "title":        "In-VAN MEETING"
 
         }
      

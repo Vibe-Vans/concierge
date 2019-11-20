@@ -14,18 +14,19 @@ section {
 }
 .sec_logo {
     padding: 0;
-    position: absolute;
+    position: relative;
     .logo {
         width: 100%;
         display: flex;
         margin-top: 240px;
         justify-content: center;
-        align-content: center;
-        align-items: center;
+        // align-content: center;
+        // align-items: center;
     }
     img {
         position: absolute;
         bottom: 0;
+        text-align: center;
     }
 }
 /* BRANDING - in CANVAS */
@@ -67,7 +68,10 @@ section {
 .tile_4th {
     position: absolute;
     color: $primaryText;
-    // top: 300px;
+    font-size: 1.2rem ;
+    display: flex;
+flex-direction: row;
+align-content: center;
     background: $bradingColor-1;
     // z-index: 2;
 }
@@ -174,11 +178,11 @@ button{
 }
 
 select.select_vibe{
-    margin-top: 65px;
     color: $primaryText;
     text-shadow: none;
     background-color:rgba(0, 0, 0, 0);
     border: none;
+    margin-top: 75px;
     font-size: 1.2rem;
     text-decoration: underline;
 

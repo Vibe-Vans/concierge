@@ -1,8 +1,6 @@
 import React, { Component, useState } from 'react'
 import Texty from 'rc-texty'
-import { FaFly } from 'react-icons/fa';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { GiLightBulb } from 'react-icons/gi';
 import Modal from 'react-bootstrap/modal';
 
 
@@ -33,16 +31,22 @@ class Vibe extends Component {
 
         return (
             <div className="shape tile_4th" >
+                
+                 <Texty
+                    type='scaleY'
+                    mode='smooth'
+                    style={{ fontSize: '1.2rem', marginTop: '81px'}}>
+                    vibe:
+                </Texty>
              <select className="select_vibe">
                { 
                 this.state.vibeName.map((vibename, id) => (
-                    <option key={id}  value={vibename.vibeName}>
-                
-                           {vibename.vibeName}
-                      
+                    <option key={id}  value={vibename.vibeName}>     
+                        {vibename.vibeName}                      
                     </option>))
                 }
             </select>
+        
             
              
     
@@ -60,7 +64,7 @@ class Vibe extends Component {
 
                     <div className='shape subtile'>
                         <div variant="outline-none" >
-                            <FaFly style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
+                            <GiLightBulb  style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
                         </div >
 
                     </div>
