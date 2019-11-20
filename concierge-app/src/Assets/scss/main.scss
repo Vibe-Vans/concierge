@@ -190,3 +190,6 @@ select.select_vibe{
         color: $secondaryText;
     };
 }
+select::-ms-expand {
+    display: none;
+}

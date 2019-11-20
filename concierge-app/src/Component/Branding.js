@@ -54,22 +54,22 @@ class Branding extends Component {
         }
         return (
             <div className="logo">
-                <TweenOne animation={this.animate.img_1} style={{ marginLeft: '-280px' }}>
-                    <img src={vv_1} height='233.4em' />
+                <TweenOne animation={this.animate.img_1} style={{ marginLeft: '-225px' }}>
+                    <img src={vv_1} height='180.4em' />
 
                 </TweenOne>
                 <TweenOne animation={this.animate.img_2} >
-                    <img src={vv_2} height='233.6em' />
+                    <img src={vv_2} height='180.6em' />
 
                 </TweenOne>
                 <TweenOne animation={this.animate.img_3}>
-                    <img src={vv_3} height='234em' />
+                    <img src={vv_3} height='183em' />
                 </TweenOne>
                 <TweenOne animation={this.animate.img_4}>
-                    <img src={vv_4} height='234em' />
+                    <img src={vv_4} height='183em' />
                 </TweenOne>
                 <TweenOne animation={this.animate.img_5}>
-                    <img src={logo} height='234.8em' alt="logo" />
+                    <img src={logo} height='183.8em' alt="logo" />
                 </TweenOne>
 
             </div>

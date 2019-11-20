@@ -90,7 +90,7 @@ class App extends Component {
         <section className="sec_logo">
         <div >
             <Branding />
-          </div>
+        </div>
         
           
         </section>
