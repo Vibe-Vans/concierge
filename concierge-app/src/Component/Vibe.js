@@ -1,7 +1,8 @@
 import React, { Component, useState } from 'react'
 import Texty from 'rc-texty'
 import { FaFly } from 'react-icons/fa';
-import Button from 'react-bootstrap/Button';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 import Modal from 'react-bootstrap/modal';
 
 
@@ -31,11 +32,22 @@ class Vibe extends Component {
     render() {
 
         return (
-            <div>
+            <div className="shape tile_4th" >
+             <select className="select_vibe">
+               { 
+                this.state.vibeName.map((vibename, id) => (
+                    <option key={id}  value={vibename.vibeName}>
+                
+                           {vibename.vibeName}
+                      
+                    </option>))
+                }
+            </select>
+            
+             
+    
 
-
-
-                <button className='shape tile_4th' onClick={this.handleShow}>
+                {/* <button className='shape tile_4th' onClick={this.handleShow}>
                     <div className="data_place">
 
                         <Texty
@@ -47,7 +59,10 @@ class Vibe extends Component {
                     </div>
 
                     <div className='shape subtile'>
-                       <FaFly style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />   
+                        <div variant="outline-none" >
+                            <FaFly style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
+                        </div >
+
                     </div>
                 </button>
                 <Modal show={this.state.show} onHide={this.handleClose}>
@@ -80,9 +95,9 @@ class Vibe extends Component {
                         </div>
                     </Modal.Body>
 
-                </Modal>
+                </Modal> */}
 
-            </div>
+    </div>
 
         )
     }

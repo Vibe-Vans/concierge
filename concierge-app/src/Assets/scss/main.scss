@@ -172,3 +172,21 @@ button{
         padding-bottom: 0;
     }
 }
+
+select.select_vibe{
+    margin-top: 65px;
+    color: $primaryText;
+    text-shadow: none;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+    &:focus{
+        outline: none;
+    }
+    option{
+        background: rgba(0, 0, 0, 0.2);
+        color: $secondaryText;
+    };
+}
