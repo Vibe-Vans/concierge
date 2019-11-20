@@ -8,8 +8,8 @@
             "address1": "LAX Terminal #5",
             "city": "Los Ageneles",
             "state": "CA",
-            "latitude":"33.9416",
-            "longitude":"-118.4085"
+            "latitude":"34.05223",
+            "longitude":"-118.24368"
         },
         "driver": {
             "driverName": "shawn"

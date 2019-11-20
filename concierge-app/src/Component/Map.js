@@ -9,13 +9,13 @@ import { FaMapPin } from 'react-icons/fa';
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiamhldHBhdGVsIiwiYSI6ImNrMzM4ODEydjBzMXEzbXBtMHl4bGoxeHYifQ.b4wJbq3kJO2nk1xKnM_UqA';
 
 class Map extends Component {
-
+    
     constructor(props) {
         super(props)
         this.state = {
             viewport: {
-                latitude: 33.942791,
-                longitude: -118.410042,
+                latitude: 34.05223,
+                longitude: -118.24368,
                 height: 500,
                 width: 600,
                 zoom: 10
