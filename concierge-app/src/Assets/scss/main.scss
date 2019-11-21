@@ -13,27 +13,35 @@ section {
     text-align: center;
 }
 .sec_logo {
-    padding: 0;
-    position: relative;
+    // padding: 0;
+    // position: relative;
     .logo {
         width: 100%;
         display: flex;
-        margin-top: 240px;
+        margin-top:10%;
         justify-content: center;
-        // align-content: center;
-        // align-items: center;
+        align-content: center;
+        align-items: center;
     }
     img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        // bottom: 0;
+        // text-align: center;
+    }
+    svg{
         position: absolute;
-        bottom: 0;
-        text-align: center;
+        width: 200px;
+        margin: auto 0;
+      
     }
 }
 /* BRANDING - in CANVAS */
 
 .shape {
     width: 100%;
-    height: 170px;
+    height: 160px;
     padding: 35px;
     width: 100%;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
@@ -156,9 +164,8 @@ button{
     display:flex;
     align-items: center;
     padding: 10px 30px;
-    height: 80px;
-    margin:5px;
-    // border-bottom-left-radius: 30px;
+    height: 70px;
+    // margin:5px;
     background-color: rgba(56, 56, 56, 0.377);
 
     input[type=radio]{
@@ -182,7 +189,7 @@ select.select_vibe{
     text-shadow: none;
     background-color:rgba(0, 0, 0, 0);
     border: none;
-    margin-top: 75px;
+    margin-top: 65px;
     font-size: 1.2rem;
     text-decoration: underline;
 

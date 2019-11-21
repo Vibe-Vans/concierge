@@ -35,7 +35,7 @@ class Vibe extends Component {
                  <Texty
                     type='scaleY'
                     mode='smooth'
-                    style={{ fontSize: '1.2rem', marginTop: '81px'}}>
+                    style={{ fontSize: '1.2rem', marginTop: '72px'}}>
                     vibe:
                 </Texty>
              <select className="select_vibe">
