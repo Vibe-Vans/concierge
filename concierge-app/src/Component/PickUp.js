@@ -12,7 +12,9 @@ const PickUp = (props) => {
     const handleShow = () => setShow(true);
 
     return (
+
         <div className='shape tile_2nd'>
+
             <div className="data_place">
                 <Texty
                     type='scaleBig'
@@ -30,7 +32,7 @@ const PickUp = (props) => {
 
             </div>
             <div className='shape subtile'>
-                <Button  variant="outline-none" onClick={handleShow}>
+                <Button variant="outline-none" onClick={handleShow}>
                     <FaMapMarked style={{ marginTop: '65px', fontSize: '2.2rem', textAlign: 'center' }} />
                 </Button>
 
@@ -40,14 +42,16 @@ const PickUp = (props) => {
                     </Modal.Header>
 
                     <Modal.Body>
-                        <Map lat={props.pickup.pickup.latitude} log={props.pickup.pickup.longitude}/>
-            
+                        <Map lat={props.pickup.pickup.latitude} log={props.pickup.pickup.longitude} />
+
                     </Modal.Body>
 
                 </Modal>
 
             </div>
         </div>
+
+
     )
 
 }

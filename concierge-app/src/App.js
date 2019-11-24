@@ -55,11 +55,11 @@ class App extends Component {
         <QueueAnim  delay={300} className="row">
        
           <div className="col-12">
-            <TweenOne animation={this.animate.tile_1} style={{ position: 'relative', zIndex: 5 }}>
+            <div style={{ position: 'relative', zIndex: 5 }}>
               <User user={
                 data.user
               } />
-            </TweenOne>
+            </div>
           </div>
 
           <div className="col-12">

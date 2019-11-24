@@ -17,8 +17,8 @@ class Map extends Component {
                 latitude: 34.05223,
                 longitude: -118.24368,
                 height: 500,
-                width: 600,
-                zoom: 10
+                width: 100,
+                zoom: 12
             },
             searchResultLayer: null
         }
@@ -60,7 +60,7 @@ class Map extends Component {
                 id: "mapSearch-result",
                 data: event.result.geometry,
                 getFillColor: [0, 0, 0, 428],
-                getRadius: 1000,
+                getRadius: 500,
                 pointRadiusMinPixels: 10,
                 pointRadiusMaxPixels: 10
             })
@@ -94,7 +94,7 @@ class Map extends Component {
                         <DeckGL {...viewport} layers={[searchResultLayer]} />
 
                         <Marker latitude={viewport.latitude} longitude={viewport.longitude} offsetLeft={-20} offsetTop={-10}>
-                            <FaMapPin src={FaMapPin} alt='You are here' fontSize="2em"  color="red"/>
+                            <FaMapPin src={FaMapPin} alt='You are here' fontSize="2.2em"  color="red"/>
                         </Marker>
                     </ReactMapboxGl>
 
