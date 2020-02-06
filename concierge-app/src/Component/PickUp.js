@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Texty from 'rc-texty';
-import Map from './Map';
+// import Map from './Map';
+import MapGoogle from './MapGoogle'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/modal';
 import { FaMapMarked } from 'react-icons/fa';
@@ -42,8 +43,8 @@ const PickUp = (props) => {
                     </Modal.Header>
 
                     <Modal.Body>
-                        <Map lat={props.pickup.pickup.latitude} log={props.pickup.pickup.longitude} />
-
+                        {/* <Map lat={props.pickup.pickup.latitude} log={props.pickup.pickup.longitude} /> */}
+                        <MapGoogle lat={props.pickup.pickup.latitude} lng={props.pickup.pickup.longitude}/>
                     </Modal.Body>
 
                 </Modal>

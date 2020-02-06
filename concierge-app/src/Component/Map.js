@@ -17,7 +17,7 @@ class Map extends Component {
                 latitude: 34.05223,
                 longitude: -118.24368,
                 height: 500,
-                width: 100,
+                width: 60,
                 zoom: 12
             },
             searchResultLayer: null

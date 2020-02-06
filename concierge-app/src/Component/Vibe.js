@@ -1,8 +1,6 @@
 import React, { Component, useState } from 'react'
 import Texty from 'rc-texty'
-import { GiLightBulb } from 'react-icons/gi';
 import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button'
 
 class Vibe extends Component {
     constructor(props) {
@@ -30,51 +28,50 @@ class Vibe extends Component {
 
     handleInput = (e) => {
         console.log(e.target.textContent)
-        this.setState({defaultVibe: e.target.textContent})
+        this.setState({ defaultVibe: e.target.textContent })
     }
 
 
-   showHide = (event) => {
-    event.preventDefault();
-        this.setState({ collapseTile: !this.state.collapseTile})
+    showHide = (event) => {
+        event.preventDefault();
+        this.setState({ collapseTile: !this.state.collapseTile })
     }
 
     render() {
 
         return (
-          
+
             <button
                 className='shape tile_4th data-place'
                 onClick={this.showHide}>
 
-                <div className='data-place' style={{marginTop:'75px'}}>
+                <div className='data-place' style={{ marginTop: '75px' }}>
 
                     <Texty type='scaleY' mode='smooth'>
-                         { 'vibe: '+ this.state.defaultVibe}
+                        {'vibe: ' + this.state.defaultVibe}
                     </Texty>
-         
 
-                <Collapse
-                    in={this.state.collapseTile}
-                    style={{marginTop:'70px'}}
-                   >
+
+                    <Collapse
+                        in={this.state.collapseTile}
+                        style={{ marginTop: '70px' }}
+                    >
                         <div>
                             {
-                                this.state.vibe.map((vibe,id) => (
-                                    <div 
-                                    key={id} 
-                                    className='vibe'  
-                                    value={vibe.vibeName}
-                                    onClick={this.handleInput}>
-
-                                     {vibe.vibeName}           
+                                this.state.vibe.map((vibe, id) => (
+                                    <div
+                                        key={id}
+                                        className='vibe'
+                                        value={vibe.vibeName}
+                                        onClick={this.handleInput}>
+                                        {vibe.vibeName}
                                     </div>
                                 ))
                             }
                         </div>
- 
-                    </Collapse>    
-                    </div>
+
+                    </Collapse>
+                </div>
 
                 {/* <button className='shape tile_4th' onClick={this.handleShow}>
                     <div className="data_place">
@@ -124,9 +121,9 @@ class Vibe extends Component {
                         </div>
                     </Modal.Body>
 
-                </Modal> */} 
-                
-        </button>
+                </Modal> */}
+
+            </button>
 
         )
     }

@@ -1,10 +1,10 @@
 
 
 /*BRANDING COLORS */
-$bradingColor-1:    #f7c43a;
-$bradingColor-2:    #f99718;
-$bradingColor-3:    #e32b16;
-$bradingColor-4:    #780c04; 
+$yellow:          #FFA100;
+$orange:            #FF7E00;
+$red:               #FF2C00;
+$marron:          #C00000; 
 
 $headerColor:       #000000;
 $backgroundColor:   #faedca;
@@ -25,3 +25,14 @@ $secondaryText:     #e32b16;
 
 $fontName:         'Futura', Helvetica, 'Roboto',sans-serif;
 $lineHieght:        1rem;
+
+/*RADIUS*/
+$allRadius: 10px;
+$tileRadius:  30px;
+$pointedRadius: 35px 35px 35px 0;
+
+/* Gradient */
+$gradientBR:  linear-gradient(to top right, $red, $yellow);
+
+/* Box Shadow */
+$boxShadow:   0px 10px 20px rgba(0,0,0,0.2);  
