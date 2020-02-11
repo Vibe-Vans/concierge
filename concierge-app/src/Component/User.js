@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Texty from 'rc-texty';
+import {subscribe} from 'mqtt-react'
 
 class User extends Component {
     render() {
+        const {data} = this.props
+        console.log('mqtt...dta', data)
         return (
-            <div className='shape tile_1st'>
+            <div className='shape tile_1st' style={{background:`${data}`}}>
                 <div className="data_place">
                     <Texty
                         type='scaleBig'
@@ -24,4 +27,8 @@ class User extends Component {
     }
 }
 
+
+User = subscribe({
+    topic:'@demo/color'
+  })(User)
 export default User;

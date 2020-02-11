@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Connector} from 'mqtt-react'
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
 
@@ -50,6 +51,7 @@ class App extends Component {
       ]
     }
     return (
+      <Connector mqttProps='localhost:1883'>
       <div className='container-fluid'>
         <section className="sec_menu"> 
         <QueueAnim  delay={300} className="row">
@@ -107,6 +109,7 @@ class App extends Component {
        
 
       </div>
+      </Connector>
     )
 
   }
