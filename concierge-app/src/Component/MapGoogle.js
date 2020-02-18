@@ -8,7 +8,6 @@ import '../Assets/scss/maps.scss'
 import { connect } from "react-redux";
 
 const GOOGLE_MAP_API_KEY = "AIzaSyBg3YpSre6FHSjquc8FqpOniPI_9ZID1Co"
-const endcoded_data = 'ixqnEzz|pUp@?fAA`AAb@?`@Aj@A\\ALAd@GD?\\EB?ZCd@CNAHAHABADCLMbD?h@?~@B@?f@?d@@~DID?rEAnCAHAT?rCAt@APAnCGb@Al@At@E`@CRAf@?J?~BIxBMjDOb@Ab@AP?hGO|AGnBEtBEz@?hA?hC?rCFhCDzFLX?b@@fABhB?v@AV?XALCT?V?f@Ct@?jHEbCAn@A\\AZAhDEpDA@?b@?X?H@bBBtAH`ADX@XBdBHvBJ@?~@BlCBxC@n@?N?@?R?h@?vAAjTAl@?LAP?d@?hE?`C@j@?b@?|F?X?X?dE?pA?zE?T?b@A@?R?vA@t@AlG@|GDR?P?vD@v@@lA?H?b@@zC?fABhD@j@?h@?lDAlGChAArAAP?R?`A?bA?xACt@A`ACpE]vBWJAh@I\\Ex@IjDa@DAz@KzAQj@I^EhEk@JARCZEXE~CYp@CzAA`A?nADjAHd@DdBHF@dAHjBLtBLd@@J@X@f@@tA?tFDP?P?xC?fGBhA@hA@xBDj@?B?tBBvBHp@@bCHH?p@Bn@DlBJ'
 
 class MapGoogle extends Component {
 
@@ -119,7 +118,7 @@ class MapGoogle extends Component {
 
     render() {
 
-        const { google, coord, desc, title } = this.props;
+        const { google} = this.props;
 
         const style = {
             width: '100vw',

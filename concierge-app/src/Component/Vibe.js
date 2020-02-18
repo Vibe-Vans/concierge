@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import Texty from 'rc-texty'
 import Collapse from 'react-bootstrap/Collapse';
 
@@ -12,11 +12,6 @@ class Vibe extends Component {
             defaultVibe: props.vibe.vibe[0].vibeName
 
         }
-        this.handleInput = this.handleInput.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-        this.handleShow = this.handleShow.bind(this);
-        this.showHide = this.showHide.bind(this);
-
     }
 
     handleClose = () => {
@@ -72,56 +67,6 @@ class Vibe extends Component {
 
                     </Collapse>
                 </div>
-
-                {/* <button className='shape tile_4th' onClick={this.handleShow}>
-                    <div className="data_place">
-
-                        <Texty
-                            type='scaleY'
-                            mode='smooth'
-                            style={{ fontSize: '1.2rem', marginBottom: '15px' }}>
-                            {'vibe: ' + this.state.selectedVibe}
-                        </Texty>
-                    </div>
-
-                    <div className='shape subtile'>
-                        <div variant="outline-none" >
-                            <GiLightBulb  style={{ marginTop: '95px', fontSize: '1.4rem', textAlign: 'center' }} />
-                        </div >
-
-                    </div>
-                </button>
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Select vibe</Modal.Title>
-                    </Modal.Header>
-
-                    <Modal.Body>
-                        <div>
-                            {
-                                this.state.vibeName.map((vibename, id) => (
-                                    <div key={id} className='vibe'>
-                                        <input
-                                            type="radio"
-                                            name="viebeRadio"
-                                            id="radio`${id}`"
-                                            checked={this.state.selectedVibe === this.state.vibeName[vibename.id].vibeName}
-                                            value={vibename.vibeName}
-                                            onChange={this.handleChange} />
-                                        <label>
-                                            <Texty
-                                                type='mask-bottom'
-                                                mode='smooth'
-                                            >{vibename.vibeName}
-                                            </Texty>
-                                        </label>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </Modal.Body>
-
-                </Modal> */}
 
             </button>
 

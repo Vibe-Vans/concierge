@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import Texty from 'rc-texty';
-import {subscribe} from 'mqtt-react'
+import { subscribe } from 'mqtt-react'
 
 class User extends Component {
     render() {
-        const {data} = this.props
-        console.log('mqtt...dta', data)
+
+        const {user, data} = this.props
+        console.log(`...${data[0]}`)
+
         return (
-            <div className='shape tile_1st' style={{background:`${data}`}}>
+            <div className='shape tile_1st'>
                 <div className="data_place">
                     <Texty
                         type='scaleBig'
                         mode='random'
                         style={{ fontSize: '3.7rem', marginBottom: '25px' }}>
-                        {this.props.user.name}
+                        {user.name}
                     </Texty>
 
                     <Texty
                         type='mask-bottom'
-                        mode='random'>{this.props.user.message}
+                        mode='random'>{user.message}
                     </Texty>
                 </div>
 
@@ -26,9 +28,7 @@ class User extends Component {
         );
     }
 }
-
-
 User = subscribe({
-    topic:'@demo/color'
+    topic: 'space/input'
   })(User)
 export default User;
